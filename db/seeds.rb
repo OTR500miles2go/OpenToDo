@@ -7,8 +7,7 @@ User.create!(
   username: "simpleuser",
   name: "Any Person",
   email: "simple@email.com",
-  password: "mypass123",
-  password_confirmation: "mypass123"
+  password: "mypass123"
 )
 
 5.times do

@@ -5,5 +5,4 @@ class List < ApplicationRecord
   
   # validations
   validates :title, presence: true, length: { minimum: 5 }
-  validates :created_by, presence: true
 end
