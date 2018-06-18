@@ -10,16 +10,25 @@ User.create!(
   password: "mypass123"
 )
 
-5.times do
-  List.create!(
-    title: RandomData.random_sentence,
-    created_by: "Any Person",
-    private: true, 
-    user_id: "1"
-  )
+User.create!(
+  username: "fancyuser",
+  name: "Zena Person",
+  email: "fancy@email.com",
+  password: "passmy123"
+)
+
+for j in 1..2 do
+  5.times do
+    List.create!(
+      title: RandomData.random_sentence,
+      created_by: "People",
+      private: true, 
+      user_id: "#{j}"
+    )
+  end 
 end 
 
-for i in 1..5 do
+for i in 1..10 do
   3.times do
     Item.create!(
       name: RandomData.random_sentence,
